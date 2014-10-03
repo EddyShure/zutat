@@ -10,8 +10,8 @@ module Zutat
 
     def initialize(igrdnts)
       igrdnts.each do |k,v|
-        k.gsub!('-', '_')
-        send("#{k}=",v)
+        m = k.gsub('-', '_')
+        send("#{m}=",v)
       end
     end
   end

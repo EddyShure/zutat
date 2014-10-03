@@ -4,9 +4,12 @@ module Zutat
 
     def initialize(p)
       @json = JSON.parse(p)
-      
+      @ingredients = Array.new
+
       @json["ingredients"].each do |n|
-        @ingredients << Zutat::Ingredient.new(n)
+        ingredient = Zutat::Ingredient.new(n)
+        p ingredient
+        @ingredients << ingredient
       end
       @nutrient_targets = nil
     end
