@@ -10,7 +10,7 @@ module Zutat
       @url = URI((URL + id + "/json"))
       @res = Net::HTTP.get(@url)
 
-      return Zutat::Receipt.new(@res)
+      return Zutat::Recipe.new(@res)
     end
   end
 end
