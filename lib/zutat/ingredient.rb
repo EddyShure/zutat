@@ -12,6 +12,11 @@ module Zutat
       igrdnts.each do |k,v|
         m = k.gsub('-', '_')
         send("#{m}=",v)
+      
+        if m.is_a? String and m.is_empty?
+          send("#{m}=",nil)
+        end
+        
       end
     end
   end
