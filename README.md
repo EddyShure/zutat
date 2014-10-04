@@ -15,14 +15,21 @@ At first, you should require the gem. Otherwise it won't work.
 ```ruby
 require 'zutat'
 ```
+## Initialize a client
 Then you must initialize a new client.
 ```ruby
 client = Zutat::Client.new
 ```
-Now you can get a recipe. If I want the "People Chow 3.0.1" recipe, I type:
+
+## Getting recipes
+Now you can get a recipe by its ID. If I want the "People Chow 3.0.1" recipe, I type:
 ```ruby
 recipe = client.get_recipe "people-chow-301-tortilla-perfection"
 ```
+
+## TODO
+* Adding search feature
+* Optimizing attributes from Zutat::Ingredients and Zutat::NutrientTargets
 
 ## Support
 If you like my work, you can support me via Gratipay, Flattr or a Bitcoin donation:

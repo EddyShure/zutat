@@ -8,10 +8,9 @@ module Zutat
 
       @json["ingredients"].each do |n|
         ingredient = Zutat::Ingredient.new(n)
-        p ingredient
         @ingredients << ingredient
-      end
-      @nutrient_targets = nil
+      end    
+      @nutrient_targets = Zutat::NutrientTargets.new(@json["nutrientTargets"])
     end
   end
 end
