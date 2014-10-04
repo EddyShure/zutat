@@ -2,7 +2,7 @@ module Zutat
   class Ingredient
     attr_accessor :_id, :amount, :biotin, :calcium, :calories, :carbs, :chloride, :cholesterol,
       :choline, :chromium, :container_size, :copper, :fat, :fiber, :folate, :form, :ingredientId,
-      :insoluble_fiber, :iodine, :iron, :item_cost, :maganese, :magnesium, :molybdenum, 
+      :usdaId, :insoluble_fiber, :iodine, :iron, :item_cost, :maganese, :magnesium, :molybdenum, 
       :monounsaturated_fat, :name, :niacin, :omega_3, :omega_6, :panthothenic, :persistedAsin, 
       :phosphorus, :polyunsaturated_fat, :potassium, :protein, :riboflavin, :saturated_fat, 
       :selinium, :serving, :sodium, :soluble_fiber, :source, :sulfur, :thiamin, :unit, :url, 
