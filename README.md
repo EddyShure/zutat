@@ -15,19 +15,19 @@ At first, you should require the gem. Otherwise it won't work.
 ```ruby
 require 'zutat'
 ```
-## Initialize a client
+### Initialize a client
 Then you must initialize a new client.
 ```ruby
 client = Zutat::Client.new
 ```
 
-## Fetching recipes
+### Fetch a recipe
 At this point, you can get a recipe by its ID. If I want the "People Chow 3.0.1" recipe, I type:
 ```ruby
 recipe = client.get_recipe "people-chow-301-tortilla-perfection"
 ```
 
-## Using the recipe object
+### Using the recipe object
 If I want to know, how many calories are specified as nutrient target I simply use:
 ```ruby
 puts recipe.nutrient_targets.calories
@@ -41,6 +41,7 @@ end
 ```
 
 ## TODO
+* Adding index with all objects
 * Adding search feature
 * Optimizing attributes from Zutat::Ingredients and Zutat::NutrientTargets
 
