@@ -13,10 +13,10 @@ module Zutat
         m = k.gsub('-', '_')
         send("#{m}=",v)
       
-        if m.is_a? String and m.is_empty?
+        if v.is_a? String and v.empty?
           send("#{m}=",nil)
         end
-        
+
       end
     end
   end

@@ -1,8 +1,8 @@
 module Zutat
-  module NutrientTargets
+  class NutrientTargets
     attr_accessor :zinc_max, :zinc, :vitamin_k_max, :vitamin_k, :vitamin_e_max, :vitamin_e, :vitamin_d_max, 
       :vitamin_d, :vitamin_c_max, :vitamin_c, :vitamin_b6_max, :vitamin_b6, :vitamin_b12_max, :vitamin_b12,
-      :vitamin_a_max, :vitamin_a, :thiamin_max, :thiamin, :sulfur_max, :sulfur, :sodium_max, :sodium, :selinium_max
+      :vitamin_a_max, :vitamin_a, :thiamin_max, :thiamin, :sulfur_max, :sulfur, :sodium_max, :sodium, :selinium_max,
       :selinium, :riboflavin_max, :riboflavin, :protein_max, :protein, :potassium_max, :potassium, :phosphorus_max,
       :phosphorus, :panthothenic_max, :panthothenic, :omega_6_max, :omega_6, :omega_3_max, :omega_3, :niacin_max, 
       :niacin, :name, :molybdenum_max, :molybdenum, :magnesium_max, :magnesium, :maganese_max, :maganese, :iron_max,
