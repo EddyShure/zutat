@@ -21,10 +21,23 @@ Then you must initialize a new client.
 client = Zutat::Client.new
 ```
 
-## Getting recipes
-Now you can get a recipe by its ID. If I want the "People Chow 3.0.1" recipe, I type:
+## Fetching recipes
+At this point, you can get a recipe by its ID. If I want the "People Chow 3.0.1" recipe, I type:
 ```ruby
 recipe = client.get_recipe "people-chow-301-tortilla-perfection"
+```
+
+## Using the recipe object
+If I want to know, how many calories are specified as nutrient target I simply use:
+```ruby
+puts recipe.nutrient_targets.calories
+```
+
+Or when I want to know the source (to buy) for each ingredient in this recipe:
+```ruby
+recipe.ingredients.each do |ingredient|
+  puts ingredient.source
+end
 ```
 
 ## TODO
