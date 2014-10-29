@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
     
   s.name        = 'zutat'
-  s.version     = '0.1.4'
-  s.date        = '2014-10-05'
+  s.version     = '0.1.5'
+  s.date        = '2014-10-29'
   s.summary     = "Get Soylent recipes from diy.soylent.me."
   s.description = "Fetch Soylent recipes from diy.soylent.me and get easy-to-use Ruby objects."
   s.authors     = ["Eddy Shure"]

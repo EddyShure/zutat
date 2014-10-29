@@ -7,8 +7,12 @@ module Zutat
 
       @url = URI((URL + id + "/json"))
       @res = Net::HTTP.get(@url)
-
-      return Zutat::Recipe.new(@res)
+      
+      if @res["error"]
+        raise "[zutat] Recipe not found."
+      else
+        return Zutat::Recipe.new(@res)
+      end
     end
   end
 end
